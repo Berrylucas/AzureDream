@@ -6,6 +6,38 @@
 
 主要技术：H5+CSS3+JS+Nodejs+express+multer+mysql
 
+### 项目展示
+
+##### 主页
+
+<img src="img\home01.png" alt="home01" style="zoom: 80%;" />
+
+点击左侧分类导航栏，即可查看上传的文档列表（部分功能未实现~）
+
+<img src="img\home03.png" alt="home03" style="zoom:80%;" />
+
+查看该类文档列表
+
+<img src="img\home02.png" alt="home02" style="zoom:80%;" />
+
+点击列表中的某文档，即可查看文档内容
+
+##### 管理登录页
+
+<img src="img\login.png" alt="login" style="zoom: 80%;" />
+
+在此可以登录到管理页面，也实现了token自动登录机制
+
+##### 管理页
+
+<img src="img\manager01.png" alt="manager01" style="zoom:80%;" />
+
+简易管理端页面，通过上面按钮对文档进行相应操作
+
+<img src="img\manager02.png" alt="manager02" style="zoom:80%;" />
+
+在此可以上传文件
+
 ### 需求分析
 
 ---
