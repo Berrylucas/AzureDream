@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>admin|manager</title>
+        <!-- load css files -->
+        <link rel="stylesheet" href="/stylesheets/admin/admin.css">
+    </head>
+    <body>
+        <div class="root">
+            <div class="menu">
+                <div id="upload">upload</div>
+                <div id="delete">delete</div>
+                <div id="hidden">hidden</div>
+                <div id="show-file">show</div>
+            </div>
+            <div class="list-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>select</th>
+                            <th>contentType</th>
+                            <th>name</th>
+                            <th>creatTime</th>
+                            <th>sections</th>
+                            <th>isHidden</th>
+                        </tr>
+                    </thead>
+                    <!-- 一页7条 -->
+                    <tbody>
+                        <tr>
+                            <td><div class="td-content">select</div></td>
+                            <td><div class="td-content">Note</div></td>
+                            <td><div class="td-content">note01</div></td>
+                            <td><div class="td-content">2023-02-14</div></td>
+                            <td><div class="td-content">java,test</div></td>
+                            <td><div class="td-content">No</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="nav">
+                    <div id="pre">上页</div>
+                    <div id="next">下页</div>
+                </div>
+            </div>
+        </div>
+        <div id="shadow-box">
+            <form id="upload-root" enctype="multipart/form-data">
+                <!-- 默认文档，选择图片时js修改选项 -->
+                <div class="top-bar">
+                    <div>Upload document</div>
+                    <div class="cancel"></div>
+                </div>
+                <div class="select-info">
+                    <label for="doctype">文件类型</label>
+                    <div>
+                        <select name="docType" id="doctype" onchange="changeDocType()">
+                            <option style="height: 3rem;" value="0" selected>document</option>
+                            <option style="height: 3rem;" value="1">image</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select-info">
+                    <label for="docContent">文件内容</label>
+                    <div>
+                        <select name="docContent" id="doc-content">
+                            <option value="1" selected>se</option>
+                            <option value="2">note</option>
+                            <option value="3">creation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select-info">
+                    <label for="doc">选择文件</label>
+                    <input name="file" id="doc" type="file" placeholder="select a path" accept=".md" required>
+                </div>
+                <div class="select-info">
+                    <label for="file-name">文件名</label>
+                    <input name="fileName" id="file-name" type="text" placeholder="default name">
+                </div>
+                <div class="select-info">
+                    <label id="label-name" for="labels">文本标签</label>
+                    <input name="lables" id="labels" type="text" placeholder="@ separate">
+                </div>
+                <div class="operate-box">
+                    <button id="reset" type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- load js files -->
+        <script src="/javascripts/admin/admin.js"></script>
+    </body>
+</html>

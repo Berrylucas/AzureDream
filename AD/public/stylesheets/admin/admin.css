@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root {
+    width: 90%;
+    height: 50rem;
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.root > div{
+    width: 95%;
+}
+
+.menu{
+    height: 2rem;
+    margin-top: 10px;
+    line-height: 2rem;
+    border-bottom: 3px solid white;
+}
+
+.menu > div{
+    width: 5rem;
+    text-align: center;
+}
+
+#upload{
+    float: left;
+    background-color: green;
+}
+
+#hidden{
+    float: right;
+    background-color: yellow;
+}
+
+#delete{
+    background-color: red;
+    margin: 0 1rem;
+    float: right;
+}
+
+#show-file{
+    margin: 0 1rem;
+    background-color: blue;
+    float: right;
+}
+
+.list-box{
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+table{
+    width: 100%;
+    height: 43rem;
+    margin:1rem 0;
+    border-spacing:1rem 2rem;
+
+    font-size: 14px;
+}
+
+thead{
+    height: 1rem;
+}
+
+td{
+    width: auto;
+    border: 2px solid black;
+}
+
+.td-contend{
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.nav{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > div{
+    height: 1rem;
+    width: 3rem;
+
+    line-height: 1rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#shadow-box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(22,22,22,0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* pointer-events: none; */
+}
+
+#upload-root{
+    width: 50rem;
+    height: 37.5rem;
+    background-color: #fff;
+
+    /* pointer-events: inherit; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#upload-root > div{
+    width: 90%;
+    height: 4rem;
+    margin: 0rem 1rem;
+    border: 2px solid black;
+}
+
+#upload-root > .top-bar{
+    background-color: white;
+}
+
+.top-bar div:first-child{
+    width: 14rem;
+    height: 2rem;
+    position: relative;
+    float: left;
+    margin: 0.5rem 0.5rem;
+    border: 2px solid black;
+}
+
+.cancel{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0.51rem;
+    position: relative;
+    float:right;
+    background-color: black;
+}
+
+.select-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.select-info > label{
+    display: inline-block;
+    width: 30%;
+    height: 4rem;
+    line-height: 4rem;
+}
+.select-info  input{
+    width: 60%;
+    text-indent: 1rem;
+    height: 3rem;
+    border: 2px solid red;
+}
+
+.select-info > div{
+    width: 60%;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.select-info > div > select{
+    padding: 5px;
+    background: transparent;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    height: 3rem;
+    appearance:unset;
+    outline: none;
+}
+
+select{
+    text-align: center;
+}
+
+select option{
+    height: 3rem !important;
+    padding: 1rem 0;
+    line-height: 3rem !important;
+}
+
+.operate-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operate-box > button{
+    width: 30%;
+    height: 3rem;
+    border: 2px solid salmon;
+}
+
+.select-radio{
+    display: table;
+width: 1rem;
+height: 1rem;
+margin: 0 auto;
+}

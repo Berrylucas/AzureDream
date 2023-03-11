@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>admin|manager</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/admin/login.css">
+</head>
+
+<body>
+    <div class="root">
+        <div>
+            <div class="show-box message-box"></div>
+            <div id="loginbox" class="show-box">
+                <form id="loginform" class="login-box" style="z-index:1;">
+                    <div class="head-img"></div>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Username">
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="pwd" placeholder="Password">
+                    </div>
+                    <div>
+                        <button class="login-button" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- load js files -->
+    <script src="/javascripts/admin/login.js"></script>
+</body>
+
+</html>

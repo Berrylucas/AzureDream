@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="/favicon.ico">
+        <!-- load css files -->
+        <link rel="stylesheet"  type="text/css" href="/stylesheets/home/style.css">
+        <link rel="stylesheet" href="/stylesheets/highlight/github.min.css">
+    </head>
+    <body>
+        <div id='root'>
+			<div id='logo'>
+			</div>
+            <div class="flex-box">
+                <div id='side-bar'>
+                    <div id="nav">
+                        <ul id="nav-ul" type='none'>
+                            <li><div id="bgc-0"><div data-number="0">Search</div></div></li>
+                            <li><div id="bgc-1"><div data-number="1">SE</div></div></li>
+                            <li><div id="bgc-2"><div data-number="2">Notes</div></div></li>
+                            <li><div id="bgc-3"><div data-number="3">Creations</div></div></li>
+                            <li><div id="bgc-4"><div data-number="4">A-Qiu</div></div></li>
+                        </ul>
+                        <div id="LN-switch">
+                            <input type="checkbox" id="dark-light" /><label for="dark-light"></label>
+                        </div>
+                    </div>
+                    <div id="info">Contact qiu.w@outlook.com</div>
+                </div>
+                <div id='main'>
+                    <!-- <div id="main-root"></div> -->
+                    <span id="typed"></span>
+                </div>
+            </div>
+			<div id='footer'>
+				<span></span>
+			</div>
+        </div>
+        <div id="shadow-box">
+            <div id="show-box">
+                <div class="operate-box">
+                    <div><span id="file-name">fileName</span></div>
+                    <div id="cancel-button">Cancel</div>
+                </div>
+                <div class="content-box"></div>
+            </div>
+        </div>
+        <!-- load js files -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="/javascripts/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="/javascripts/home/request.js"></script>
+        <script src="/javascripts/home/content.js"></script>
+        <script src="/javascripts/home/home.js"></script>
+    </body>
+</html>
